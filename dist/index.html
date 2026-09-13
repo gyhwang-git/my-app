@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+      The character encoding keeps the document's text consistent across
+      browsers and operating systems.
+    -->
+    <meta charset="utf-8" />
+
+    <!--
+      This setting lets the layout adapt to the width of phones and tablets
+      instead of rendering as a scaled-down desktop page.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- The browser tab title. Update this when the site's name changes. -->
+    <title>Hello World!</title>
+
+    <style>
+      /*
+        Keep sizing predictable: padding and borders are included in an
+        element's declared width and height.
+      */
+      * {
+        box-sizing: border-box;
+      }
+
+      /*
+        Center the message vertically and horizontally. The min-height makes
+        the main area fill at least the visible browser window.
+      */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        background: #f5f7fb;
+        color: #1f2937;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /*
+        This card holds all visible content. Its maximum width keeps lines
+        readable on a large display while width: 100% helps on small screens.
+      */
+      main {
+        width: 100%;
+        max-width: 42rem;
+        padding: 3rem 2rem;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 2.5rem rgb(31 41 55 / 12%);
+      }
+
+      /* Main page heading. */
+      h1 {
+        margin: 0;
+        color: #0f4c81;
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+      }
+
+      /* Supporting text shown below the heading. */
+      p {
+        margin: 1rem 0 0;
+        font-size: clamp(1.125rem, 3vw, 1.5rem);
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--
+      The <main> landmark tells assistive technology where the page's primary
+      content begins. Change the text below to update the visible message.
+    -->
+    <main>
+      <h1>Hello World!</h1>
+      <p>I'm Jae Seung Lee</p>
+    </main>
+  </body>
+</html>
